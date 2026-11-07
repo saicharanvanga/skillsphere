@@ -1,0 +1,29 @@
+{
+  "name": "skillsphere",
+  "version": "1.0.0",
+  "description": "SkillSphere – Interactive Student Skill & Portfolio Tracker (MERN Stack)",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test": "npm test --prefix server",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "mern",
+    "skills-tracker",
+    "portfolio",
+    "react",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "SkillSphere Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
